@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simulation xmlns="http://www.gleamviz.org/xmlns/gleamviz_v4_0">
+  <definition type="multi-run" id="1750422043874.26D" name="Scenario 2">
+    <compartmentalModel>
+      <compartments>
+        <compartment isCarrier="false" y="44" color="#51b2b7" x="445" isSecondary="false" id="Susceptible" isCommuter="true" isTraveller="true"/>
+        <compartment isCarrier="true" y="210" color="#51b2b7" x="433" isSecondary="false" id="Exposed" isCommuter="true" isTraveller="true"/>
+        <compartment isCarrier="true" y="355" color="#51b2b7" x="434" isSecondary="true" id="Infected" isCommuter="false" isTraveller="false"/>
+        <compartment isCarrier="false" y="471" color="#51b2b7" x="422" isSecondary="false" id="Recovered" isCommuter="true" isTraveller="true"/>
+      </compartments>
+      <ratioTransitions>
+        <ratioTransition ratio="(1/alpha)" target="Infected" labelPosition="0.5" source="Exposed"/>
+        <ratioTransition ratio="(1/gamma)" target="Recovered" labelPosition="0.5" source="Infected"/>
+      </ratioTransitions>
+      <infections>
+        <infection target="Exposed" source="Susceptible">
+          <infector ratio="beta" y="122" x="758" source="Infected"/>
+        </infection>
+      </infections>
+      <variables>
+        <variable value="6.5" name="alpha"/>
+        <variable value="0.34" name="beta"/>
+        <variable value="8.5" name="gamma"/>
+      </variables>
+    </compartmentalModel>
+    <parameters runCount="20" seasonalityAlphaMin="0.50" secondaryEvents="1" occupancyRate="100" outbreakSize="2" seasonalityEnabled="false" commutingModel="radiation" flightsTimeAggregation="month" commutingRate="8" startDate="2020-03-04" duration="63"/>
+    <notes/>
+    <initialCompartments>
+      <initialCompartment fraction="100" compartment="Susceptible"/>
+    </initialCompartments>
+    <seeds>
+      <seed number="22" city="1697" compartment="Infected"/>
+      <seed number="21" city="1699" compartment="Infected"/>
+      <seed number="65" city="1505" compartment="Infected"/>
+      <seed number="49" city="1513" compartment="Infected"/>
+      <seed number="38" city="1512" compartment="Infected"/>
+      <seed number="55" city="1535" compartment="Infected"/>
+      <seed number="115" city="750" compartment="Infected"/>
+      <seed number="48" city="748" compartment="Infected"/>
+      <seed number="50" city="732" compartment="Infected"/>
+      <seed number="24" city="2884" compartment="Infected"/>
+      <seed number="90" city="2874" compartment="Infected"/>
+      <seed number="1267" city="420" compartment="Infected"/>
+      <seed number="24085" city="477" compartment="Infected"/>
+      <seed number="2259" city="2966" compartment="Infected"/>
+      <seed number="278" city="3106" compartment="Infected"/>
+      <seed number="33" city="2821" compartment="Infected"/>
+      <seed number="5547" city="2803" compartment="Infected"/>
+      <seed number="80" city="3089" compartment="Infected"/>
+      <seed number="516" city="3086" compartment="Infected"/>
+      <seed number="37" city="3081" compartment="Infected"/>
+      <seed number="1497" city="3093" compartment="Infected"/>
+      <seed number="31" city="3071" compartment="Infected"/>
+      <seed number="27" city="3099" compartment="Infected"/>
+      <seed number="82" city="3082" compartment="Infected"/>
+      <seed number="345" city="3085" compartment="Infected"/>
+    </seeds>
+    <resultCompartments>
+      <id>Exposed</id>
+      <id>Infected</id>
+      <id>Recovered</id>
+    </resultCompartments>
+    <exceptions/>
+  </definition>
+  <metadata>
+    <creationDate>2025-06-11T17:51:49</creationDate>
+    <clientVersion>7.2.5</clientVersion>
+  </metadata>
+  <extradata>
+    <userVariableOrder>alpha beta gamma</userVariableOrder>
+  </extradata>
+</simulation>
