@@ -6,10 +6,9 @@ Questo progetto modella la diffusione del **COVID-19 in Italia durante la Fase 1
 - Confrontare simulazioni con dati reali;
 - Simulare uno scenario alternativo senza restrizioni per quantificare l'impatto delle misure.
 
-Il lavoro nasce all'interno del corso *Sistemi Complessi: Modelli e Simulazione* presso l’Università di Milano-Bicocca.
-
-Simone Lesinigo, [@github](https://github.com/Leso246)
-Andrea Broccoletti, [@github](https://github.com/BrockDeveloper/)
+Il lavoro nasce all'interno del corso *Sistemi Complessi: Modelli e Simulazione* presso l’Università di Milano-Bicocca, con autori:
+- Simone Lesinigo, [@github](https://github.com/Leso246)
+- Andrea Broccoletti, [@github](https://github.com/BrockDeveloper/)
 
 ## Simulazioni effettuate
 
