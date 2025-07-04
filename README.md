@@ -20,21 +20,7 @@ Il lavoro nasce all'interno del corso *Sistemi Complessi: Modelli e Simulazione*
 ### Scenario 2: Covid-19 senza restrizioni
 - Periodo: 4 marzo 2020 - 4 maggio 2020
 - Nessuna restrizione: tasso di contagio costante e mobilità invariata
-
----
-
-## Risultati
-
-### Con restrizioni:
-- Picco simulato ~2800-3000 casi al 24 marzo.
-- Riduzione a ~1700-1800 casi al 4 maggio.
-- Andamento coerente con dati reali nella fase discendente, pur sottostimando il picco iniziale.
-
-### Senza restrizioni:
-- Crescita esponenziale senza contenimento.
-- Picchi >150.000 casi giornalieri.
-- Conferma l'efficacia delle restrizioni nel contenere la diffusione.
-- 
+ 
 ## Gleamviz
 Per ogni ulteriore specifica sul simulatore utilizzato, si rimanda al [sito ufficiale](https://www.gleamviz.org/index.html) dello stesso.
 
